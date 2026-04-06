@@ -1,0 +1,6 @@
+# Copy to .dev.vars (gitignored) for local development.
+# Production values: wrangler secret put <KEY>
+
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=your_auth_token_here
+TWILIO_PHONE_NUMBER=+1XXXXXXXXXX

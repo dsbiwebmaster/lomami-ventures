@@ -1,14 +1,28 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "solitary-hat-1f66",
-  "compatibility_date": "2026-04-06",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "."
-  },
-  "compatibility_flags": [
-    "nodejs_compat"
-  ]
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "solitary-hat-1f66",
+	"compatibility_date": "2026-04-06",
+	"main": "src/worker.js",
+	"observability": {
+		"enabled": true
+	},
+	"assets": {
+		"directory": "public"
+	},
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "lomami-subscribers",
+			"database_id": "841ebb81-32a8-4441-a80f-6678e96e3c93"
+		},
+		{
+			"binding": "lomami_subscribers",
+			"database_name": "lomami-subscribers",
+			"database_id": "841ebb81-32a8-4441-a80f-6678e96e3c93",
+			"remote": true
+		}
+	]
 }
